@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz dia dos namorados!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="Logo-Netflix.png" width="70px">
+        </div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Series</a>
+            <a href="#">Filmes</a>
+            <a href="#">Minha lista</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="conteudo">
+            <p class="titulo">Samuel e Renata</p>
+            <p class="detalhes">
+                <span>12 DE JUNHO, 6 TEMPORADAS</span>
+                <span class="stars">
+                    <i class="fa-solid fa-star" style="color: #ee1762;"></i>
+                    <i class="fa-solid fa-star" style="color: #ee1762;"></i>
+                    <i class="fa-solid fa-star" style="color: #ee1762;"></i>
+                    <i class="fa-solid fa-star" style="color: #ee1762;"></i>
+                    <i class="fa-solid fa-star" style="color: #ee1762;"></i>
+                </span>
+            <p class="descricao">
+                Uma série romântica que narra a história de amor entre Samuel e Renata, mostrando os altos e baixos de
+                um relacionamento verdadeiro. Com momentos de alegria, superação e muito amor, essa série é perfeita
+                para celebrar o dia dos namorados.
+            </p>
+            <div class="botoes">
+                <button><i class="fa-solid fa-play" style="color: #615c5e;"></i> Continuar</button>
+                <button><i class="fa-solid fa-star" style="color: #615c5e;"></i> Favorito</button>
+            </div>
+            </p>
+        </div>
+    </section>
+
+    <section class="momentos">
+        <h2>Nossos Momentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="Fotos/fundo2.jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.03 (1).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.04 (1).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.04 (2).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.04.jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (1).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (10).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (11).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (13).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (14).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (15).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (2).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (3).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (4).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (5).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (6).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (7).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (8).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05 (9).jpeg">
+                <div class="swiper-slide"><img src="Fotos/WhatsApp Image 2025-06-12 at 03.51.05.jpeg">
+                
+                ...
+            </div>
+
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            slidePerView: 2,
+            spaceBetween: 10,
+            loop : true,
+            breakpoints: {
+                600: {
+                    loop: true,
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                }
+            }
+        },
+        );
+    </script>
+</body>
+
+</html>
